@@ -264,7 +264,7 @@ function onGameEnd(state, username, uiType) {
   // Wait a moment so player sees game over screen
   setTimeout(() => {
     showScreen("end-screen");
-    document.getElementById("end-title").textContent = \`Session complete, \${username}!\`;
+    document.getElementById("end-title").textContent = `Session complete, ${username}!`;
     
     const payload = buildPayload(username, uiType, state);
     sendSessionData(payload)
